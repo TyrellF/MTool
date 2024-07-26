@@ -1,0 +1,297 @@
+/* Apply the font to all elements */
+* {
+  font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+/* Set default margin and padding to 0, and make body 100% height */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide any overflowing content */
+}
+/* Sidebar styles */
+.sidebar {
+  height: 100vh; /* Use viewport height for full height */
+  width: 35vh; /* Use percentage for width */
+  background-color: #dbe3ef;
+  padding: 20px; /* Add padding for spacing */
+}
+.apiCard {
+  border-radius: 35px;
+  padding-top: 20px;
+  align-items: center;
+}
+.apiListScroll {
+  overflow-y: scroll;
+  max-height: 550vh;
+  width: 30vh;
+  height: 82vh;
+}
+.apiListScroll::-webkit-scrollbar {
+  display: none;
+}
+.orderedList {
+  margin: 0;
+  padding: 1vh;
+  list-style-type: none;
+}
+/* Main content styles */
+.apiContent {
+  width: 95%; /* Use the remaining width */
+  height: 97%; /* Use viewport height for full height */
+  min-height: 80vh;
+  padding: 25px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  border-radius: 3vh;
+  margin-left: 3vh;
+}
+.apiContainer {
+  width: 95%;
+  height: auto;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 35px;
+  margin-top: 3vh;
+  margin-left: 3vh;
+}
+.subApiListScroll {
+  border-radius: 35px;
+  width: 100%;
+
+  background-color: #eef0f6;
+  overflow-y: scroll;
+  min-height: 55vh;
+  height: auto;
+}
+.subApiListScroll::-webkit-scrollbar {
+  display: none;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* For screens smaller than 768px */
+  .sidebar {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Allow content to expand vertically */
+  }
+  .apiContent {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Allow content to expand vertically */
+  }
+}
+.subApiCard {
+  height: auto;
+  min-height: 60vh;
+  border-radius: 35px;
+  width: 100%;
+}
+.subApiCardDesign {
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subApiCardDesignLong {
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.apiButton {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.quickLookCard {
+  width: 90%;
+  height: 100%;
+  background-color: #eef0f6;
+  border-radius: 20px;
+  margin-left: 6vh;
+  margin-top: 2vh;
+}
+.quickLookCardFT {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  background-color: #eef0f6;
+  border-radius: 20px;
+  margin-left: 6vh;
+  margin-top: 2vh;
+  min-height: 50px;
+}
+.codeCheckContainer {
+  text-align: center;
+  border-radius: 35px;
+}
+/* Button styles */
+.statusButton,
+.statusButtonOK,
+.statusButtonNOK,
+.genericButton {
+  display: inline-block; /* Make buttons display inline */
+  padding: 10px 20px; /* Add padding for button size */
+  margin: 5px; /* Add margin for spacing between buttons */
+  text-align: center; /* Center text */
+  border-radius: 20px; /* Rounded corners */
+  color: white; /* Text color */
+}
+.genericButton {
+  background-color: #485785;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.sidebarButton {
+  background-color: #485785; /* Sidebar button color */
+  width: 170px;
+  font-size: 13px;
+  color: white;
+  align-content: center;
+}
+.statusButton {
+  background-color: #485785; /* Status button color */
+  border: none; /* Remove border */
+}
+.statusButtonOK,
+.statusButtonNOK {
+  width: 200px; /* Status button width */
+}
+/* Hover styles */
+.statusButton:hover,
+.statusButtonOK:hover,
+.statusButtonNOK:hover,
+.sidebarButton:hover {
+  color: white; /* Change text color on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow on hover */
+}
+/* Escalation Tool CSS */
+.subApiCardDesignET {
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.subApiListScrollET {
+  border-radius: 35px;
+  width: 100%;
+  background-color: #eef0f6;
+  overflow-y: scroll;
+  max-height: 400vh;
+  height: 445px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.subApiListScrollET::-webkit-scrollbar {
+  display: none;
+}
+.subApiCardDesignETR {
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 65vh;
+  margin-bottom: 2vh;
+  box-sizing: border-box;
+}
+.subApiListScrollETR {
+  width: 100%;
+  height: 210px;
+  background-color: #eef0f5;
+  overflow-y: scroll;
+  max-height: 400vh;
+}
+.subApiListScrollETR::-webkit-scrollbar {
+  display: none;
+}
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .subApiListScrollQR,
+  .subApiListScrollET,
+  .subApiListScrollETR {
+    height: auto;
+    max-height: 50vh;
+  }
+}
+.apiButtonGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1px;
+  row-gap: 1px;
+  padding: 0px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+.apiButtonGrid::-webkit-scrollbar {
+  display: none;
+}
+.apiButtonItem {
+  list-style: none;
+  border-radius: 25px;
+  margin: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .apiButtonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .apiButtonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apiButtonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 5px;
+  }
+}
+
+/* Additional styling for small screens */
+@media (max-width: 320px) {
+  .apiButtonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 4px;
+  }
+}
+
+/* EscalationSlackbot */
+.subApiCardDesignESB {
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 49vh;
+  margin-bottom: 2vh;
+  box-sizing: border-box;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators .active {
+  filter: invert(1);
+}

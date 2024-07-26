@@ -1,0 +1,58 @@
+﻿$color_1: white;
+$color_2: #485785;
+$background-color_1: #485785;
+
+.sidebar {
+	max-height: 800vh;
+	height: 830px;
+	border-radius: 20px;
+}
+.sidebarButton {
+	background-color: $background-color_1;
+	color: $color_1;
+	&:hover {
+		color: $color_2;
+	}
+}
+.genericButton {
+	background-color: $background-color_1;
+	color: $color_1;
+	padding: 5px 10px;
+	border-radius: 10px;
+	margin: 5px;
+}
+.apiList {
+	padding: 40px 30px;
+}
+.apiListScroll {
+	overflow-y: scroll;
+	max-height: 500vh;
+	height: 680px;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+.apiContent {
+	padding: 40px 30px;
+	height: 830px;
+	border-radius: 20px;
+}
+.loader {
+	align-items: center;
+	padding: 50px;
+}
+.apiCard {
+	border-radius: 35px;
+	padding: 30px;
+}
+.statusContent {
+	padding: 2px;
+	justify-content: center;
+}
+.listItems {
+	padding-left: 30px;
+}
+.orderedList {
+	padding-left: 30px;
+}
+
